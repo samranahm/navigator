@@ -1,12 +1,13 @@
-import { Slot } from "expo-router";
-import { Drawer } from 'expo-router/drawer';
+import React from "react";
+import { Drawer } from "expo-router/drawer";
 
 const DrawerLayout = () => {
   return (
-    <Drawer />
-  )
-   
-   
+    <Drawer>
+      <Drawer.Screen name="HomeScreen" />
+      <Drawer.Screen name="FeatureScreen" />
+    </Drawer>
+  );
 };
 
 export default DrawerLayout;
