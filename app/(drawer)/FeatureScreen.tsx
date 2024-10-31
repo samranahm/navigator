@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Link } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 
 const FeatureScreen = () => {
   return (
@@ -15,6 +16,7 @@ const FeatureScreen = () => {
           Home Screen
       </Link>
     </View>
+    <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
 };
