@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View style={styles.body}>
         <Text>this is Home screen</Text>
         <Link href={"./FeatureScreen"} style={styles.button}>
@@ -19,6 +19,9 @@ const HomeScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  container:{
+    backgroundColor:'#161622',
+  },
   body: {
     alignItems: "center",
     justifyContent: "center",
