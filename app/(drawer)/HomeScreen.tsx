@@ -8,7 +8,8 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.body}>
-        <Text>this is Home screen</Text>
+        <Text style={styles.text}>
+          this is Home screen</Text>
         <Link href={"./FeatureScreen"} style={styles.button}>
           Feature Screen
         </Link>
@@ -26,6 +27,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+  },
+  text: {
+    color: '#fff'
   },
   button: {
     backgroundColor: "#FF9C01",

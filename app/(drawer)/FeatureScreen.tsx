@@ -6,9 +6,10 @@ import { StatusBar } from "expo-status-bar";
 
 const FeatureScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View style={styles.body}>
-      <Text>This is Feature screen</Text>
+      <Text style={styles.text}>Welcome to the Features Page! 🎉
+          Here, you'll find all the amazing features conveniently gathered in one place for easy access.</Text>
       <Link
         href={'./HomeScreen'}
         style={styles.button}
@@ -22,6 +23,9 @@ const FeatureScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  container:{
+    backgroundColor:'#161622',
+  },
   body:{
     height:'100%',
     alignItems:'center',
@@ -34,6 +38,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginTop: 15,
   },
+  text:{
+    paddingHorizontal:10,
+    color:'#fff'
+
+  }
 });
 
 export default FeatureScreen;
